@@ -8,7 +8,7 @@ AFRAME.registerComponent("bowling-balls",{
             if(e.key === "z"){
                 var ball = document.createElement("a-entity")
 
-                ball.setAttribute("gltf-model", "./models/bowling-ball/scene.gltf")
+                ball.setAttribute("gltf-model", "./models/bowling_ball/scene.gltf")
                 ball.setAttribute("scale", {x: 3, y: 3, z: 3})
 
                 var cam = document.querySelector("#camera")
@@ -16,7 +16,7 @@ AFRAME.registerComponent("bowling-balls",{
 
                 ball.setAttribute("position", {
                     x: pos.x,
-                    y: pos.y-1.2,
+                    y: pos.y-0.2,
                     z: pos.z
                 })
 
